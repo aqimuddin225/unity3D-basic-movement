@@ -407,14 +407,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.2127838, y: 0.46655846, z: 1.2600002}
+  m_LocalRotation: {x: 0.19216403, y: -0, z: -0, w: 0.9813629}
+  m_LocalPosition: {x: 0, y: 4.67, z: -17.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1537351601}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 22.158, y: 0, z: 0}
 --- !u!1 &1143847698
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,9 +440,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1143847698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.08, y: 1.99, z: -8.5968}
-  m_LocalScale: {x: -2.9351225, y: -0.77382535, z: -1.87944}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: -1.22, y: 1.99, z: -0.5}
+  m_LocalScale: {x: -3.4499464, y: -3.9373288, z: -2.2314327}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -473,6 +473,7 @@ GameObject:
   - component: {fileID: 1537351599}
   - component: {fileID: 1537351598}
   - component: {fileID: 1537351597}
+  - component: {fileID: 1537351602}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -567,14 +568,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1537351596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.2127838, y: 0.53344154, z: -11.26}
+  m_LocalPosition: {x: 0, y: 1, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 963194228}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1537351602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537351596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94a2710ce38d0b345b32568a9ce932f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  jumpForce: 5
+  target: {fileID: 164612350}
 --- !u!1 &1630530957
 GameObject:
   m_ObjectHideFlags: 0
@@ -589,7 +604,7 @@ GameObject:
   - component: {fileID: 1630530958}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
